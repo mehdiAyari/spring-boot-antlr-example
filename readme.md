@@ -42,7 +42,7 @@ To run the PostgreSQL database using Docker, follow these steps:
    This will start the Spring Boot application and create the PostgreSQL database schema using Liquibase.
 
 2. **Database Initialization**:
-   The `insert_data.sql` file is used to populate the `person` table with initial data. It will be executed automatically by the Spring Boot application as part of the database initialization process.
+   The `insert_data.sql` file is used to populate the `person` table with initial data.
 
 ### 3. Testing Requests
 
