@@ -1,0 +1,49 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: MAYARI
+      changes:
+        - createTable:
+            tableName: person
+            schemaName: tutorial
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: lastname
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: age
+                  type: INT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: city
+                  type: VARCHAR(255)
+
+              - column:
+                  name: is_active
+                  type: BOOLEAN
+                  constraints:
+                    nullable: false
+                    defaultValueBoolean: true
+
+              - column:
+                  name: birth_date
+                  type: DATE
